@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
+        "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
+
+<beans>
+
+
+   <bean id="prodDao1" class="com.cts.ecart.dao.ProductDaoImpl"></bean>
+<!-- <bean id="prodDao2" class="com.cts.ecart.dao.ProductDaoImpl"></bean>  -->
+    
+    
+    
+<bean id="prodService" class="com.cts.ecart.service.ProductServiceImpl" autowire="constructor"/>
+<!--    <bean id="prodService" class="com.cts.ecart.service.ProductServiceImpl" autowire="byType"/> -->
+
+<!--    <bean id="prodService" class="com.cts.ecart.service.ProductServiceImpl" autowire="byName"> -->
+ 
+<!--    			<property name="productRepository" ref="prodDao1"/> -->
+<!--    </bean> -->
+
+
+</beans>
+
+

@@ -1,13 +1,13 @@
 package com;
 
-public class C1 {
+public class C2 {
 	
 	
 	private String personName;
 	
 
-	public C1() {
-		System.out.println(">> C1 class object created on "+System.identityHashCode(this));
+	public C2() {
+		System.out.println(">> C2 class object created on "+System.identityHashCode(this));
 	}
 	
 	
@@ -20,9 +20,8 @@ public class C1 {
 	}
 
 
-	public void f1() {
+	public void f2() {
 		System.out.println(">> f1 method called on "+System.identityHashCode(this));
-		System.out.println("Person Name is "+personName);
 	}
 
 }

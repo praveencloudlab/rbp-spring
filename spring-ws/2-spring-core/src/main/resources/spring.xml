@@ -1,12 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN 2.0//EN"
         "http://www.springframework.org/dtd/spring-beans-2.0.dtd">
-        
+
 <beans>
 
-	<bean id="b1" class="com.C1"></bean>
-	
-	
+<bean id="b1" class="com.C1" scope="singleton" lazy-init="false">
+	<property name="personName" value="P1" />
+</bean> 
+<bean id="b2" class="com.C2" scope="singleton" lazy-init="true"/> 
+<bean id="b3" class="com.C1" scope="singleton" lazy-init="true">
+<property name="personName" value="P2" />
+</bean> 
+<bean id="b4" class="com.C1" scope="singleton" lazy-init="true"> 
+<property name="personName" value="P3"/>
+</bean>
+
+
+
+
+
+<!-- 	<bean id="b1" class="com.C1" scope="singleton"> -->
+<!-- 		<property name="personName" value="James" /> -->
+<!-- 	</bean> -->
+
+<!-- 	<bean id="b2" class="com.C1" scope="prototype"> -->
+<!-- 		<property name="personName" value="Praveen" /> -->
+<!-- 	</bean> -->
+
+
+
 </beans>
 
 
