@@ -1,0 +1,8 @@
+Spring configuration: 2 types
+1.XML based
+2.java based (annotation)
+
+
+ JDK 1.1
+ JDK 1.4
+ JDK 1.6 => annotation based configuration + XML (Spring 3.5)
