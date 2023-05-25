@@ -6,6 +6,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
 public class ProductController {
+	public ProductController() {
+		System.out.println(">>>>>> controller");
+	}
 	
 	@GetMapping(value = "/s1")
 	public void f1() {
