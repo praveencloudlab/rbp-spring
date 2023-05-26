@@ -26,6 +26,9 @@ public class EmployeeRepositoryImpl {
 	@Transactional
 	public Employee save(Employee emp) {
 		
+		
+		
+		System.out.println("REPO::: "+emp);
 		Session session = sessionFactory.getCurrentSession();
 		//session.save(emp);
 		session.persist(emp);
