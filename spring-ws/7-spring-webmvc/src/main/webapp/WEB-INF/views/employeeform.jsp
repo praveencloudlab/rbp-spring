@@ -8,38 +8,45 @@
 </head>
 <body>
 
-	<h1>Employee Form</h1>
+
+	<jsp:include page="./header.jsp" />
+
 	<hr />
+	<p align="center">
+		<jsp:include page="./menu.jsp" />
+	</p>
 
-	<form action="./saveEmployeev1" method="post">
+	<div align="center">
 
-		<div>
-			<input name="firstName" placeholder="Employee First Name" />
-		</div>
+		<form action="./saveEmployeev1" method="post">
 
-		<div>
-			<input name="lastName" placeholder="Employee Last Name" />
-		</div>
-		<div>
+			<div>
+				<input name="firstName" placeholder="Employee First Name" />
+			</div>
 
-			<input name="email" placeholder="Employee email ID" />
-		</div>
+			<div>
+				<input name="lastName" placeholder="Employee Last Name" />
+			</div>
+			<div>
 
-		<div>
+				<input name="email" placeholder="Employee email ID" />
+			</div>
 
-			<select name="gender">
-				<option value="Male">Male</option>
-				<option value="Female">Female</option>
-			</select>
-		</div>
+			<div>
 
-		<div>
-			<button>Save</button>
-		</div>
+				<select name="gender">
+					<option value="Male">Male</option>
+					<option value="Female">Female</option>
+				</select>
+			</div>
+
+			<div>
+				<button>Save</button>
+			</div>
 
 
-	</form>
-
+		</form>
+	</div>
 
 
 </body>
