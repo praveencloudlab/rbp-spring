@@ -21,7 +21,7 @@ public class Application {
         handler.setContextPath("/");
         handler.addServlet(servletHolder, "/*");
 
-        Server server = new Server(8080); // set the port you want
+        Server server = new Server(3005); // set the port you want
         server.setHandler(handler);
 
         server.start();
